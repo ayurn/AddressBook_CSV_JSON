@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 
 public class AddressBookIOTest {
 
-    @SuppressWarnings("deprecation")
     @Test
     public void givenContactsFromCSVFileShouldRead() {
         AddressBookFileIOService addressBookFileIOService = new AddressBookFileIOService();
@@ -17,7 +16,6 @@ public class AddressBookIOTest {
         Assertions.assertEquals(2, contactList.size());
     }
 
-    @SuppressWarnings("deprecation")
     @Test
     public void writeContactsToCSVFile() {
         AddressBookFileIOService addressBookFileIOService = new AddressBookFileIOService();
@@ -30,7 +28,6 @@ public class AddressBookIOTest {
         Assertions.assertTrue(b);
     }
 
-    @SuppressWarnings("deprecation")
     @Test
     public void writeContactsToJsonFile() {
         AddressBookFileIOService addressBookFileIOService = new AddressBookFileIOService();
@@ -43,7 +40,6 @@ public class AddressBookIOTest {
         Assertions.assertTrue(b);
     }
 
-    @SuppressWarnings("deprecation")
     @Test
     public void readContactsFromJsonFile() {
         AddressBookFileIOService addressBookFileIOService = new AddressBookFileIOService();

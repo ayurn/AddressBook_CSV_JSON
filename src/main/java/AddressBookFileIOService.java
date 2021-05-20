@@ -21,7 +21,6 @@ public class AddressBookFileIOService {
 
     public static final String SAMPLE_JSON_FILE_PATH = "C:\\Users\\AYUR\\IdeaProjects\\AddressBook_CSV_Json\\src\\main\\java\\ContactList.json";
 
-    @SuppressWarnings("unchecked")
     public List<Contacts> readCSVData() {
         List<Contacts> contactsList = new ArrayList<>();
         try {
